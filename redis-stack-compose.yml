@@ -1,0 +1,11 @@
+services:
+  redis:
+    image: redis/redis-stack:7.4.0-v0
+    restart: always
+    environment:
+      REDIS_ARGS: "--requirepass admin@365 --user admin on +@all ~* >admin@365"
+    volumes:
+      - ./redis-data:/data
+    ports:
+      - "6379:6379"
+      - "8001:8001"

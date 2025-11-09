@@ -2,6 +2,9 @@
 data/
 postgresql/
 
+# Redis data directory
+redis-data/
+
 # Environment files with sensitive information
 .env
 .env.local
