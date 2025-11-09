@@ -1,5 +1,5 @@
 services:
-  db:
+  postgres:
     image: postgres:latest
     restart: always
     environment:
@@ -19,10 +19,12 @@ services:
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@example.com
       PGADMIN_DEFAULT_PASSWORD: admin@365
+    volumes:
+      - ./pgadmin:/var/lib/pgadmin
     ports:
       - "5431:80"
     depends_on:
-      - db
+      - postgres
     networks:
       - docker-compose-stack-network
 

@@ -1,6 +1,7 @@
 # PostgreSQL data directory
 data/
 postgresql/
+pgadmin/
 
 # Redis data directory
 redis-data/
