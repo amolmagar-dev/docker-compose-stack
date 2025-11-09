@@ -1,5 +1,6 @@
 # PostgreSQL data directory
 data/
+postgresql/
 
 # Environment files with sensitive information
 .env
